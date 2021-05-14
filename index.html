@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualization</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="draw()">
+    <div class="main-controls">
+      <div class="controls">
+        <ul>
+          <li><a href="#" onclick="selectionSort()">Selection sort</a></li>
+          <li><a href="#" onclick="bubbleSort()">Bubble sort</a></li>
+          <li><a href="#">Insertion sort</a></li>
+          <li><a href="#">Merge sort</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Quick sort</a></li>
+          <li><a href="#">Heap sort</a></li>
+          <li><a href="#">Radix sort</a></li>
+          <li><a href="#">Counting sort</a></li>
+        </ul>
+      </div>
+      <div class="settings">
+        <ul>
+          <li onclick="setBars()"><a href="#">set bars</a></li>
+          <li onclick="fillArr()"><a href="#">Generate random numbers</a></li>
+          <li>
+            <input
+              type="number"
+              name=""
+              id="totalNums"
+              placeholder="Enter how many nums?"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper" id="canvas">
+      <h3 id="accessCount" style="text-align: center; padding-top: 2px;">
+        Array access count!
+      </h3>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
